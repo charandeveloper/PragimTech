@@ -1,0 +1,11 @@
+﻿<script type="text/javascript">
+    //var clickCount = 0;
+    var clickCount = (function () {
+        var _clickCount = 0;
+        return function () {
+            return ++_clickCount;
+        }
+    })();
+
+</script>
+<input type="button" value="clickMe" onclick="alert(clickCount())"> 
